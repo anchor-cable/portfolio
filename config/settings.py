@@ -26,7 +26,7 @@ SECRET_KEY = '&o)dvc$at0gchq9qer=f4ug$hrnw#l#f+nj+ir#qnc9rahd)ut'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myblog',
 ]
 
 MIDDLEWARE = [
@@ -123,12 +124,13 @@ STATIC_URL = '/static/'
 django_heroku.settings(locals())
 
 # 追加
-try:
-    from .local_settings import *
-except ImportError:
-    pass
+#try:
+#    from .local_settings import *
+#except ImportError:
+#    pass
 
 # Debug=Falseの時だけ実行する設定
 if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
+
