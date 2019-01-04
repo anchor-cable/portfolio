@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css);
+
+/* basic reset */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+/* app */
+html {
+    font-size: 100%;
+}
+body {
+    background: #b1f6cb;
+    font-family: 'Rounded Mplus 1c'; sans-serif;
+    background-image: url("../img/background.jpg");
+}
+/* super basic grid structure */
+
+#header {
+    position: fixed;
+    top: 0px;
+    background: black;
+    color: white;
+    width: 100%;
+}
+
+#sns-icons {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.menus {
+    margin-right: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: right;
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+#container {
+    margin-top: 100px;
+    width: 100%;
+    position: relative;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dassimen {
+}

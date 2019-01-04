@@ -124,10 +124,10 @@ STATIC_URL = '/static/'
 django_heroku.settings(locals())
 
 # 追加
-#try:
-#    from .local_settings import *
-#except ImportError:
-#    pass
+try:
+    from .local_settings import *
+except ImportError:
+    pass
 
 # Debug=Falseの時だけ実行する設定
 if not DEBUG:
