@@ -1,48 +1,25 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>らんDoむ！</title>
-  {% load static %}
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" Atype="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% extends 'myblog/base.html' %}
+{% block content %}
+{% load static %}
 
-</head>
-<body>
-<div django-app="Portfolio">
-    <div id="header">
-        <div>Tomoya Suzuki's Portfolio</div>
-        <div id="sns-icons">
-            ○　△　□　バツ
-        </div>
-        <div id="menu">
-            <span class="menus">About</span>
-            <span class="menus">Blog</span>
-            <span class="menus">Works</span>
-            <span class="menus">Appendix</span>
-        </div>
 
+<div id="container">
+    <div id="dassimen">
+        <img src="{% static 'img/dassimen.png' %}" alt="脱脂綿のアイコン" width="350px" height="350px">
     </div>
-
-    <div id="container">
-        <div id="dassimen">
-            <img src="{% static 'img/dassimen.png' %}" alt="脱脂綿のアイコン" width="350px" height="350px">
+    <div id="modal-overlay">
+        <div id="modal-low-box">
+            <h1 class="modal-low">鈴木智也の憲法</h1>
+            <p class="modal-low">私は社会人生活を通して、以下の結論に至った。</p>
+            <p class="modal-low">やるべきことより、<span class="strong">やりたいこと</span>を。</p>
+            <p class="modal-low">つまらないことより、<span class="strong">楽しいこと</span>を。</p>
+            <p class="modal-low">自己犠牲より、<span class=strong>チームでの解決</span>を。</p>
+            <p class="modal-low">今後私は左記の事柄への価値を一切認めず、</p>
+            <p class="modal-low">右記の事柄への価値を置く。</p>
         </div>
     </div>
-
-    <footer>
-        <p>© 2019 Tomoya Suzuki</p>
-    </footer>
-
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script>
-$('.getTodo').on('click',function(){
 
-    alert('とまれ');
-});
-</script>
-</body>
-</html>
+
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}
