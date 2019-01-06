@@ -17,6 +17,11 @@ body {
     margin: 0;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .django-app {
     height: 100%;
 }
@@ -69,11 +74,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.modal-low{
-    display:flex;
-    align-items: center; /*上下中央*/
-    justify-content: center; /*左右中央*/
     color: white;
+    visibility: hidden;
 }
