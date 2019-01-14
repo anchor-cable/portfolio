@@ -1,79 +1,89 @@
 @import url(https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css);
 
 /* basic reset */
-*, *:before, *:after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* app */
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-family: 'Rounded Mplus 1c';
-    height: 100%;
-    margin: 0;
+  font-family: "Rounded Mplus 1c";
+  height: 100%;
+  margin: 0;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .django-app {
-    height: 100%;
+  height: 100%;
 }
 /* super basic grid structure */
 
 #header {
-    position: fixed;
-    top: 0px;
-    background: black;
-    color: white;
-    width: 100%;
-    z-index: 4;
+  position: fixed;
+  top: 0px;
+  background: black;
+  color: white;
+  width: 100%;
+  z-index: 4;
+}
+
+#menu {
+  margin-left: 10px;
 }
 
 #sns-icons {
-    position: absolute;
-    top: 0px;
-    right: 10px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
 }
 
 .menus {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    text-align: right;
-    width: 100%;
-    background: black;
-    color: white;
-    z-index: 4;
+  position: fixed;
+  bottom: 0;
+  text-align: right;
+  width: 100%;
+  background: black;
+  color: white;
+  z-index: 4;
 }
 
 #container {
-    background-image: url("../img/background.jpg");
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url("../img/background.jpg");
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
 }
 
-#modal-overlay{
-	position:absolute;
-	width:100%;
-    height:100%;
-    background-color:rgba(0,0,0,0.56);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    visibility: hidden;
+#modal-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.56);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.low-box {
+  margin: 20px;
 }
