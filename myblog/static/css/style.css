@@ -15,6 +15,7 @@ html {
 
 body {
   font-family: "Rounded Mplus 1c";
+  font-size: 25px;
   height: 100%;
   margin: 0;
 }
@@ -86,4 +87,13 @@ footer {
 
 .low-box {
   margin: 20px;
+}
+
+.left {
+  margin-left: 20px;
+  width: 30%;
+}
+.right {
+  margin-right: 20px;
+  width: 70%;
 }

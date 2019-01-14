@@ -1,10 +1,12 @@
 {% extends 'myblog/base.html' %} {% block content %} {% load static %}
 
 <div id="container">
-  <div id="left">ひだり</div>
-
-  <div id="right">みぎ</div>
+  <div id="TOP">
+    <span class="left">鈴木 智也</span>
+    <span class="right">Django/Python/Java/JavaScript/etc...</span>
+  </div>
+  <div class="left">ひだり</div>
+  <div class="right">みぎ</div>
 </div>
 
-<script src="{% static 'js/index.js' %}"></script>
 {% endblock %}
