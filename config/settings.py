@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myblog',
+    'markdownx',
+    'stdimage',
 ]
 
 MIDDLEWARE = [
@@ -128,6 +130,10 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+# ImageField使うために
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 # Debug=Falseの時だけ実行する設定
 if not DEBUG:

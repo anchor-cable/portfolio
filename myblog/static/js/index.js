@@ -1,5 +1,5 @@
 const dassimen = document.getElementById("dassimen");
-const dassimen_low = document.getElementById("modal-overlay");
+const dassimen_low = document.getElementById("overlay");
 
 //ON
 dassimen.addEventListener(

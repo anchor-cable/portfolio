@@ -1,19 +1,6 @@
 {% extends 'myblog/base.html' %} {% block content %} {% load static %}
 
-<div id="container">
-  <div>
-    <img
-      src="{% static 'img/dassimen.png' %}"
-      alt="脱脂綿のアイコン"
-      width="350px"
-      height="350px"
-      id="dassimen"
-    />
-  </div>
-  <div id="modal-overlay">
-    <div id="modal-low-box_jp" class="low-box">ここはAppendixだ</div>
-  </div>
-</div>
+<div id="common_overlay"><h1>Appendix</h1></div>
 
-<script src="{% static 'js/index.js' %}"></script>
+<script src="{% static 'js/works.js' %}"></script>
 {% endblock %}
