@@ -1,0 +1,46 @@
+{% extends 'myblog/base.html' %} {% block content %} {% load static %}
+
+<div id="common_overlay">
+  <div class="first">
+    <div class="twobox">
+      <div class="leftbox">
+        <h1>鈴木智也</h1>
+        <h2>Suzuki Tomoya</h2>
+      </div>
+      <div class="rightbox"><p>Application Engineer</p></div>
+    </div>
+  </div>
+
+  <div class="second">
+    <div class="twobox">
+      <div class="leftbox">
+        <div class="photobox">
+          <img
+            src="{% static 'img/suzukitomo.jpg' %}"
+            alt="鈴木の写真"
+            width="400px"
+            id="suzukitomo"
+            class="photo"
+          />
+        </div>
+      </div>
+      <div class="rightbox">
+        {% for about in abouts %}
+        <h1>{{ about.title }}</h1>
+        <div>{{ about.content2html | safe }}</div>
+        {% endfor %} {% for about in abouts %}
+        <h1>{{ about.title }}</h1>
+        <div>{{ about.content2html | safe }}</div>
+        {% endfor %} {% for about in abouts %}
+        <h1>{{ about.title }}</h1>
+        <div>{{ about.content2html | safe }}</div>
+        {% endfor %} {% for about in abouts %}
+        <h1>{{ about.title }}</h1>
+        <div>{{ about.content2html | safe }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

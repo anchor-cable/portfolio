@@ -1,0 +1,32 @@
+{% extends 'myblog/base.html' %} {% block content %} {% load static %}
+
+<div id="index_container">
+  <div>
+    <img
+      src="{% static 'img/dassimen.png' %}"
+      alt="脱脂綿のアイコン"
+      width="350px"
+      height="350px"
+      id="dassimen"
+    />
+  </div>
+  <div id="overlay">
+    <div id="modal-low-box_jp" class="low-box">
+      <h1>鈴木智也の憲法</h1>
+      <p>やるべきことより、<span class="strong">やりたいこと</span>を。</p>
+      <p>つまらないことより、<span class="strong">楽しいこと</span>を。</p>
+      <p>自己犠牲より、<span class="strong">チームでの解決</span>を。</p>
+      <p>幸せになるために、私は右の事柄を増やしていく。</p>
+    </div>
+    <div id="modal-low-box_en" class="low-box">
+      <h1>鈴木智也の憲法</h1>
+      <p>やるべきことより、<span class="strong">やりたいこと</span>を。</p>
+      <p>つまらないことより、<span class="strong">楽しいこと</span>を。</p>
+      <p>自己犠牲より、<span class="strong">チームでの解決</span>を。</p>
+      <p>幸せになるために、私は右の事柄を増やしていく。</p>
+    </div>
+  </div>
+</div>
+
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}
