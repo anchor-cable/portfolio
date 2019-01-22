@@ -28,7 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
 ADMINS = [('Dassimen', 'forever.blue.moon@gmail.com')]
-
+SERVER_EMAIL = 'admins@sample.jp'
 
 # Application definition
 
@@ -140,9 +140,9 @@ LOGGING = {
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ja-JP'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tokyo'
 
 USE_I18N = True
 
