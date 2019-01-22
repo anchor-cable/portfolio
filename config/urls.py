@@ -16,8 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static,settings
-from django.conf.urls.defaults import *
-handler500='exception_logger.server_error'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
