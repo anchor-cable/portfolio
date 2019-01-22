@@ -26,7 +26,7 @@ SECRET_KEY = '&o)dvc$at0gchq9qer=f4ug$hrnw#l#f+nj+ir#qnc9rahd)ut'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
+ALLOWED_HOSTS = ['*']
 ADMINS = [('Dassimen', 'forever.blue.moon@gmail.com')]
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
