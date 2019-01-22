@@ -3,6 +3,7 @@ Django==2.1.5
 django-heroku==0.3.1
 django-markdownx==2.0.28
 django-stdimage==4.0.1
+gunicorn==19.9.0
 Markdown==3.0.1
 Pillow==5.4.1
 progressbar2==3.39.2
