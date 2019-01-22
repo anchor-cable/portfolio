@@ -27,6 +27,7 @@ SECRET_KEY = '&o)dvc$at0gchq9qer=f4ug$hrnw#l#f+nj+ir#qnc9rahd)ut'
 DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
+ADMINS = [('Dassimen', 'forever.blue.moon@gmail.com')]
 
 
 # Application definition
@@ -122,10 +123,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+#STATICFILES_DIRS = (
+#    os.path.join(BASE_DIR, 'static'),
+#)
 
 django_heroku.settings(locals())
 
