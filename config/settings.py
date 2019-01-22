@@ -29,6 +29,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['*']
 ADMINS = [('Dassimen', 'forever.blue.moon@gmail.com')]
 EMAIL_HOST = 'localhost'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_PORT = 1025
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
