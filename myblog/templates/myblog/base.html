@@ -14,7 +14,7 @@
   </head>
   <body>
     <div django-app="Portfolio" class="django-app">
-      <div id="header">
+      <header>
         <div id="site_top">
           <a href="/" class="menus">Tomoya Suzuki's Portfolio</a>
         </div>
@@ -29,19 +29,14 @@
           <a href="/works" class="menus">Works</a>
           <!--<a href="/appendix" class="menus">Appendix</a> 作成中のためコメントアウト-->
         </div>
-      </div>
+      </header>
 
       {% block content %}{% endblock %}
 
       <footer>
         <p id="sns-icons">○ △ □ バツ</p>
-        <p>© 2019 Tomoya Suzuki</p>
+        <p id="copyright">© 2019 Tomoya Suzuki</p>
       </footer>
     </div>
-    <script
-      async
-      src="https://platform.twitter.com/widgets.js"
-      charset="utf-8"
-    ></script>
   </body>
 </html>

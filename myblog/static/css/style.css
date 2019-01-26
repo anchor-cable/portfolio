@@ -23,24 +23,19 @@ body {
   background-attachment: fixed;
 }
 
+.django-app {
+  height: 100%;
+}
+
 a.menus {
   color: white;
   text-decoration: none;
   margin-right: 5px;
 }
 
-#sns-icons {
-  position: absolute;
-  left: 10px;
-}
-
-.django-app {
-  height: 100%;
-}
-
 /* super basic grid structure */
 
-#header {
+header {
   font-size: calc(115% + 0.5vw);
   position: fixed;
   top: 0px;
@@ -56,12 +51,21 @@ a.menus {
 
 footer {
   position: fixed;
-  bottom: 0;
   text-align: right;
+  bottom: 0;
   width: 100%;
   background: black;
   color: white;
   z-index: 4;
+}
+
+#sns-icons {
+  position: absolute;
+  left: 10px;
+}
+
+.second {
+  width: 100%;
 }
 
 .photobox {
@@ -83,8 +87,8 @@ footer {
 }
 
 div.imagebox {
-  height: 100%;
   width: 100%;
+  height: auto;
   position: relative;
   padding: 0;
   margin: 10px;
@@ -164,15 +168,15 @@ img#suzukitomo {
 
 /* worksのCSS */
 .worksbox {
-  width: 90%;
   display: flex;
   flex-wrap: wrap;
-  margin: 30px;
+  margin-left: 5vh;
+  margin-right: 5vh;
 }
 
 div.work {
-  width: calc(33.3% - 10px);
-  height: calc(33.3% - 10px); /*　高さ固定にしたい */
+  width: calc(60vh - 10px);
+  height: calc(60vh - 10px);
   margin: 5px;
   background-color: #ffffff;
   border: 1px, #4b4b4b;
@@ -188,6 +192,9 @@ div.work h2 {
     width: 70%;
   }
   .worksbox {
-    display: block;
+    justify-content: center;
+  }
+  div.work {
+    width: 90%;
   }
 }
