@@ -1,19 +1,11 @@
-{% load static %} <!DOCTYPE html>
+<!DOCTYPE html> {% load static %}
 <html>
   <head>
     <meta charset="UTF-8" />
+    <!-- ビューポートの設定 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Tomoya Suzuki's Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      Atype="text/css"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -23,8 +15,9 @@
   <body>
     <div django-app="Portfolio" class="django-app">
       <div id="header">
-        <div><a href="/" class="menus">Tomoya Suzuki's Portfolio</a></div>
-        <div id="sns-icons">○ △ □ バツ</div>
+        <div id="site_top">
+          <a href="/" class="menus">Tomoya Suzuki's Portfolio</a>
+        </div>
         <div id="menu">
           <a href="/about" class="menus">About</a>
           <a
@@ -34,15 +27,17 @@
             >Blog</a
           >
           <a href="/works" class="menus">Works</a>
-          <a href="/appendix" class="menus">Appendix</a>
+          <!--<a href="/appendix" class="menus">Appendix</a> 作成中のためコメントアウト-->
         </div>
       </div>
 
       {% block content %}{% endblock %}
 
-      <footer><p>© 2019 Tomoya Suzuki</p></footer>
+      <footer>
+        <p id="sns-icons">○ △ □ バツ</p>
+        <p>© 2019 Tomoya Suzuki</p>
+      </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script
       async
       src="https://platform.twitter.com/widgets.js"

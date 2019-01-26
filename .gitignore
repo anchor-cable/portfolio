@@ -7,3 +7,4 @@ staticfiles
 local_settings.py
 venv
 .idea
+todolist.txt

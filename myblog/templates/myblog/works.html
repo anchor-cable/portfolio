@@ -1,20 +1,26 @@
 {% extends 'myblog/base.html' %} {% block content %} {% load static %}
 
 <div id="common_overlay">
-  <h1>works</h1>
-  <div class="worksbox">
-    {% for work in works %}
-    <div class="work">
-      <h2>{{ work.title }}</h2>
-      <div class="imagebox">
-        <img alt="" src="{{ work.image.thumbnail.url }}" />
-        <span class="imagetags">
-          {% if work.link %} {{ work.link2html | safe }} {% endif %}
-        </span>
-      </div>
-      <div>{{ work.content2html | safe }}</div>
+  <div class="first">
+    <div class="twobox">
+      <div class="leftbox"><h1>Works</h1></div>
     </div>
-    {% endfor %}
+  </div>
+  <div class="second">
+    <div class="worksbox">
+      {% for work in works %}
+      <div class="work">
+        <h2>{{ work.title }}</h2>
+        <div class="imagebox">
+          <img alt="" src="{{ work.image.thumbnail.url }}" />
+          <span class="imagetags">
+            {% if work.link %} {{ work.link2html | safe }} {% endif %}
+          </span>
+        </div>
+        <div>{{ work.content2html | safe }}</div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
