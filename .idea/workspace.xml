@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7726effb-fa59-41ed-99c4-a740fda5d4e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/myblog/static/js/revise.js" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/static/js/revise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblog/templates/myblog/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/templates/myblog/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblog/templates/myblog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/templates/myblog/base.html" afterDir="false" />
-    </list>
+    <list default="true" id="7726effb-fa59-41ed-99c4-a740fda5d4e5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myblog/templates/myblog/works.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="390">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -417,8 +413,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myblog/templates/myblog/works.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
