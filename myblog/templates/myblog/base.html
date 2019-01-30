@@ -1,7 +1,47 @@
 <!DOCTYPE html> {% load static %}
 <html>
-  <head>
+  <head
+    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/websaite#"
+  >
+    <meta property="og:url" content="/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="アプリケーションエンジニアを目指して日々奮闘中の、脱脂綿こと鈴木 智也のポートフォリオです。"
+    />
+    <meta property="og:site_name" content="Tomoya Suzuki's Portfolio" />
+    <meta property="og:image" content="{% static 'img/ogp_top.png' %}" />
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="アプリケーションエンジニアを目指して日々奮闘中の、脱脂綿こと鈴木 智也のポートフォリオです。作成したアプリや経歴などを紹介しています。"
+    />
+    <link
+      rel="icon"
+      href="{% static 'img/dassimen.png' %}"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="{% static 'img/dassimen.png' %}"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="{% static 'img/dassimen.png' %}"
+      sizes="48x48"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="{% static 'img/dassimen.png' %}"
+      sizes="62x62"
+      type="image/png"
+    />
+
     <!-- ビューポートの設定 -->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Tomoya Suzuki's Portfolio</title>
