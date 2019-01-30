@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7726effb-fa59-41ed-99c4-a740fda5d4e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblog/static/js/revise.js" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/static/js/revise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblog/templates/myblog/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/templates/myblog/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myblog/templates/myblog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/templates/myblog/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/myblog/templates/myblog/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -404,7 +404,7 @@
     <entry file="file://$PROJECT_DIR$/myblog/templates/myblog/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>

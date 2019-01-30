@@ -80,7 +80,6 @@ footer {
 }
 
 #common_overlay {
-  margin-top: 40px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.56);
   color: white;
@@ -176,8 +175,8 @@ img#suzukitomo {
 
 div.work {
   width: calc(60vh - 10px);
-  height: calc(60vh - 10px);
   margin: 5px;
+  padding: 5px;
   background-color: #ffffff;
   border: 1px, #4b4b4b;
   color: #4b4b4b;
