@@ -74,7 +74,14 @@
       {% block content %}{% endblock %}
 
       <footer>
-        <p id="sns-icons">○ △ □ バツ</p>
+        <p id="sns-icons">
+          <a href="https://twitter.com/anchor_cable"
+            ><img src="{% static 'img/icon_twitter.png' %}" alt="Twitter"
+          /></a>
+          <a href="https://www.facebook.com/tomoya.suzuki.1297"
+            ><img src="{% static 'img/icon_facebook.png' %}" alt="Twitter"
+          /></a>
+        </p>
         <p id="copyright">© 2019 Tomoya Suzuki</p>
       </footer>
     </div>

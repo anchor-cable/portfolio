@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'myblog',
     'markdownx',
     'stdimage',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -157,6 +158,10 @@ STATIC_URL = '/static/'
 #    os.path.join(BASE_DIR, 'static'),
 #)
 
+# ImageField使うために
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 django_heroku.settings(locals())
 
 # 追加
@@ -165,9 +170,6 @@ try:
 except ImportError:
     pass
 
-# ImageField使うために
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
 
 # Debug=Falseの時だけ実行する設定
 if not DEBUG:
