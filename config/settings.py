@@ -153,31 +153,31 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 # 共通の設定
-AWS_ACCESS_KEY_ID = 'AKIAIWHASYZLJ43QG7SQ'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'dassimen-portfolio'
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-AWS_S3_OBJECT_PARAMETERS = {
-    'CacheControl': 'max-age=86400',  # 1日はそのキャッシュを使う
-}
+# AWS_ACCESS_KEY_ID = 'AKIAIWHASYZLJ43QG7SQ'
+# AWS_SECRET_ACCESS_KEY = '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'
+# AWS_STORAGE_BUCKET_NAME = 'dassimen-portfolio'
+# AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+# AWS_S3_OBJECT_PARAMETERS = {
+#     'CacheControl': 'max-age=86400',  # 1日はそのキャッシュを使う
+# }
 
 
-# STATIC_URL = '/static/'
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 #STATICFILES_DIRS = (
 #    os.path.join(BASE_DIR, 'static'),
 #)
 
 # 静的ファイルの設定
-AWS_LOCATION = 'static'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+# AWS_LOCATION = 'static'
+# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 
 # ImageField使うために
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# MEDIA_URL = '/media/'
-AWS_MEDIA_LOCATION = 'media'
-MEDIA__URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, AWS_MEDIA_LOCATION)
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+# AWS_MEDIA_LOCATION = 'media'
+# MEDIA__URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, AWS_MEDIA_LOCATION)
 
 django_heroku.settings(locals())
 
