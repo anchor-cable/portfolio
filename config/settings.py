@@ -153,13 +153,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 # 共通の設定
-# AWS_ACCESS_KEY_ID = 'AKIAIWHASYZLJ43QG7SQ'
-# AWS_SECRET_ACCESS_KEY = '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'
-# AWS_STORAGE_BUCKET_NAME = 'dassimen-portfolio'
-# AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-# AWS_S3_OBJECT_PARAMETERS = {
-#     'CacheControl': 'max-age=86400',  # 1日はそのキャッシュを使う
-# }
+AWS_ACCESS_KEY_ID = 'AKIAIWHASYZLJ43QG7SQ'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'dassimen-portfolio'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',  # 1日はそのキャッシュを使う
+}
 
 
 STATIC_URL = '/static/'
